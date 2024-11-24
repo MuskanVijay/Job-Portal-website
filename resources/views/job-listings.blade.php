@@ -41,7 +41,7 @@
                     <p class="card-text">GOOGLE</p>
                     <p class="text-muted mb-1">Location: Amphitheatre Parkway in Mountain View, California.</p>
                     <p class="text-muted">Salary: $80,000 - $100,000</p>
-                    <a href="#" class="btn btn-primary">Apply Now</a>
+                    <a href="#" class="btn text-light bg-secondary">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
                     <p class="card-text">MICROSOFT</p>
                     <p class="text-muted mb-1">Location: Redmond, Washington, United States</p>
                     <p class="text-muted">Salary: $70,000 - $90,000</p>
-                    <a href="#" class="btn btn-primary">Apply Now</a>
+                    <a href="#" class="btn text-light bg-secondary">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -68,11 +68,20 @@
                     <p class="card-text">AMAZON</p>
                     <p class="text-muted mb-1">Location: Bellevue, Washington</p>
                     <p class="text-muted">Salary: $90,000 - $110,000</p>
-                    <a href="#" class="btn btn-primary">Apply Now</a>
+                    <a href="#" class="btn text-light bg-secondary">Apply Now</a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="text-center mt-4">
+        <h3>Have a Job to Offer?</h3>
+        <p>Click below to add a new job listing and connect with the best talent.</p>
+        <a href="{{ route('jobs.create') }}" class="btn btn-lg text-light bg-secondary">Add Job</a>
+
+        <div class="mt-3">
+            <a href="{{ route('jobs.index') }}" class="btn btn-lg text-light bg-secondary">View Jobs</a>
+        </div>
+</div>
 
     </div>
 @endsection

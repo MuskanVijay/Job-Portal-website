@@ -1,15 +1,14 @@
 .jumbotron-with-logo {
-    background-image: url("{{ asset('Images/WOrk wise.png') }}"); /* Correct path */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    height: 400px; /* Set a specific height for the jumbotron */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
+    background-image: url("{{ asset('Images/WOrk wise.png') }}"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 400px;
+    display: flex; 
+    justify-content: center; 
     align-items: center; /* Center vertically */
     position: relative; /* Positioning context for overlay */
 }
-
 .jumbotron-with-logo::before {
     content: '';
     position: absolute;
@@ -22,22 +21,22 @@
 }
 
 .jumbotron-with-logo a {
-    position: relative; /* Make sure the button is positioned relative to the jumbotron */
-    z-index: 1; /* Ensure button is above the background */
-    color: #fff; /* Button text color for contrast */
-    text-decoration: none; /* No underline on the button */
-    padding: 10px 20px; /* Add some padding for better appearance */
-    border-radius: 5px; /* Rounded corners for the button */
-    font-size: 20px; /* Button font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    position: relative; 
+    z-index: 1;
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    font-size: 20px; 
+    transition: background-color 0.3s;
 }
 
 .jumbotron-with-logo a:hover {
-    background-color: rgba(255, 255, 255, 0.7); /* Change button color on hover */
+    background-color: rgba(255, 255, 255, 0.7); 
 }
 @media (max-width: 576px) {
     .jumbotron-with-logo {
-        padding: 80px 10px; /* Adjust padding for smaller screens */
+        padding: 80px 10px; 
     }
 
     .jumbotron-with-logo h2 {
@@ -91,3 +90,23 @@ footer {
         margin: 5px 0;
     }
 }
+
+.nav-link:hover {
+    color: #007bff;
+    text-decoration: underline; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    margin-top: auto;
+}
+
+.hover:hover {
+    background-color: #ccc; /* Change background color on hover */
+    color: #337ab7; /* Change text color on hover */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+

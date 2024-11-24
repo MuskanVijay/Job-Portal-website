@@ -4,7 +4,7 @@
     <div class="jumbotron text-center">
         <div class="d-flex flex-column align-items-center justify-content-center" style="height: 400px;">
             <img src="{{ asset('Images/WOrk wise.png') }}" alt="Job Portal Logo" style="width: 600px; height: 400px;">
-            <a class="btn btn-primary btn-lg mt-3" href="{{ route('job-listings') }}" role="button">View Job Listings</a>
+            <a class="btn  text-light bg-secondary btn-lg mt-3" href="{{ route('job-listings') }}" role="button">View Job Listings</a>
         </div>
     </div>
 
@@ -18,7 +18,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Software Engineer</h5>
                     <p class="card-text">Join a top tech company and work on innovative projects.</p>
-                    <a href="{{ route('job-listings') }}" class="btn btn-primary">View Job</a>
+                    <a href="{{ route('job-listings') }}" class="btn  text-light bg-secondary">View Job</a>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Web Development</h5>
                     <p class="card-text">Join a top tech company and work on innovative projects.</p>
-                    <a href="{{ route('job-listings') }}" class="btn btn-primary">View Job</a>
+                    <a href="{{ route('job-listings') }}" class="btn  text-light bg-secondary">View Job</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cyber Security</h5>
                     <p class="card-text">Join a top tech company and work on innovative projects.</p>
-                    <a href="{{ route('job-listings') }}" class="btn btn-primary">View Job</a>
+                    <a href="{{ route('job-listings') }}" class="btn  text-light bg-secondary">View Job</a>
                 </div>
             </div>
         </div>

@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container my-5">
     <h2 class="text-center mb-4">About Us</h2>
     <div class="row">
-        <div class="col-md-6">
-            <img src="Images/WOrk wise.png" class="img-fluid rounded mb-4" alt="Our Mission">
-        </div>
-        <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
+        <img src="Images/WOrk wise.png" class="img-fluid rounded mb-4" alt="Our Mission">
+    </div>
+    <div class="col-md-6 col-sm-12">
+
             <h3>Our Mission</h3>
             <p>We aim to connect job seekers with opportunities that match their skills and career aspirations. By making the job search process simple, transparent, and accessible, we help people build the future they envision.</p>
 
@@ -50,9 +52,21 @@
                     </ul>
                     <h3>Social Media</h3>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-inline-item ">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f fa-4x  py-3 px-3"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter fa-4x  py-3 px-3"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-linkedin-in fa-4x py-3 px-3" ></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +76,10 @@
     <div class="text-center mt-5">
         <h3>Join Us on Our Journey</h3>
         <p>Whether you're a job seeker, an employer, or someone looking to make an impact, we're here to help you achieve your goals.</p>
-        <a href="{{ route('home') }}" class="btn btn-primary">Explore Opportunities</a>
+      
+        <a href="{{ route('home') }}" class="btn  text-light bg-secondary">Explore Opportunities</a>
+      
+   
     </div>
 </div>
 @endsection
