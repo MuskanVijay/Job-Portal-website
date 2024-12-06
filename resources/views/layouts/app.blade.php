@@ -13,6 +13,12 @@
     <title>Job Portal</title>
 </head>
 <body class="font-sans antialiased">
+
+@if($message = Session::get('success'))
+<div class="alert alert-success alert-block">
+    <strong>{{ $message }}</strong>
+</div>
+@endif
     <div>
         {{-- Conditionally include navigation --}}
         @auth

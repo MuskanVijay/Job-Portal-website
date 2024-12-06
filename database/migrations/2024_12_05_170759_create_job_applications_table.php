@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('job_applications', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('company');
-            $table->string('location');
-            $table->decimal('salary', 10, 2)->nullable();
-            $table->text('description')->nullable();
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('job_id')->constrained();
+            $table->string('cover_letter');  // Path to the cover letter if necessary
             $table->timestamps();
         });
     }
@@ -27,7 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        // Corrected the table name to 'jobs'
-        Schema::dropIfExists('jobs');
+        Schema::dropIfExists('job_applications');
     }
 };

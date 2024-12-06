@@ -11,23 +11,21 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('company');
-            $table->string('location');
-            $table->decimal('salary', 10, 2)->nullable();
-            $table->text('description')->nullable();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');  // Link to users table
+            $table->string('cv')->nullable();
+            $table->string('cover_letter')->nullable();
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        // Corrected the table name to 'jobs'
-        Schema::dropIfExists('jobs');
+        Schema::dropIfExists('profiles');
     }
 };
